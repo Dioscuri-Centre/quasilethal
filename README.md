@@ -15,7 +15,7 @@ All parameters are set in the "Parameters" section of the code below. Changing a
 	
 As is, the program will generate data for mu=0.04 and gamma=0.76, for 1000 fitness landscapes, and 20 replicate simulations on each landscape.
 
-# adaptation_time_letal.c"
+# adaptation_time_letal.c
 
 The code produces the values of adaptation times for quasispecies model as based on averaging on 10000 replicas of randomly constructed fitness landscapes,
 with variable parameters L (genotype sequence), mu (mutation rate), gamma (probability to mutate into lethal state)
@@ -27,7 +27,7 @@ By entering the values for L, mu and gamma on flight, one receives the data file
 with a value of averaged adaptation time, and the data file "HistogramL=(L)mu=(mu)gamma=(gamma).dat" with a histogram 
 (distribution) of adaptation time values.
 
-# fitness_valley_length.c"
+# fitness_valley_length.c
 
 The code analyzes all possible pathways available for genotype of length L on a constructed random landscape and choses the ``slowest'' pathways, where the first mutation increases fitness to approx. the same value as the fitness of the final genotype, but subsequent mutations led through a fitness valley. 
 
