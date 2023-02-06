@@ -1,5 +1,10 @@
 # quasilethal
-The code for the article "Evolutionary adaptation is facilitated by the presence of lethal genotypes" by Viktoryia Blavatska and Bartlomiej Waclaw, arXiv:2301.07599 [q-bio.PE]
+The code and data files for the article "Evolutionary adaptation is facilitated by the presence of lethal genotypes" by Viktoryia Blavatska and Bartlomiej Waclaw, arXiv:2301.07599 [q-bio.PE]
+
+# plots_for_the_paper_final.nb
+
+This is a Wolfram Mathematica notebook which re-creates all figures from the paper. Created and tested on Mathematica 13.0. See the comments in the notebook for how to run it.
+Sub-folders contain data files which the notebook uses for plotting. The files have been generated using C++ programs described below.
 
 # directed_evolution_trajectories_both_models.cpp
 
@@ -37,3 +42,4 @@ To compile it, please use
 gcc fitness_valley_length.c -o fitness_valley_length.out -lm
 
 By entering the value for L on flight, one receives the data file "ValleylengthL=(L).dat" with the value corresponding to the minimum length of fitness valley l, obtained by averaging over 10000 random fitness landscapes. 
+
