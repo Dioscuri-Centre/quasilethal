@@ -135,12 +135,12 @@ printf("Enter probability to mutate into lethal state gamma: \n" );
 position=L;
 numberlink=pow(2,position);
 mustart=mu;
-sprintf (name9,"T_L=%dgamma%f.dat",position,gama); 
+sprintf (name9,"T_L=%dmu=%1.2fgamma=%f.dat",position,mu,gama); 
 data9 = fopen(name9,"w+");
 
  //for(gama=0.00;gama<=0.001;gama=gama+0.75)
 {          
-sprintf (name10,"HistogramL=%dgamma=%1.2f.dat",position,gama); 
+sprintf (name10,"HistogramL=%dmu=%1.2fgamma=%1.2f.dat",position,mu,gama); 
 data10 = fopen(name10,"w+");
 
 tserend=0;
